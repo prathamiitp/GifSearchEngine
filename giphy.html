@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giphy</title>
+
+    <!-- the css stylesheet -->
+    <link rel="stylesheet" href="giphystyle.css" />
+
+    <!-- the names after the container word in 
+      class field of div, input, button is just a 
+      group name to define css, 
+      every place with this class name will have the same style-->
+  </head>
+
+  <body>
+    <!-- makeing the input field and the search button -->
+    <!-- class name is js-userinput -->
+    <div class="container container-padding50">
+      <!-- taking text type user input, and a default value -->
+      <input type="text" class="js-userinput" value="" />
+      <!-- a button with container-button type style defined in css file -->
+      <button class="js-go">.</button>
+    </div>
+
+    <!-- the container for the output -->
+    <div class="container container-padding50 js-container"></div>
+
+    <!-- the js script -->
+    <script src="giphyAPI.js"></script>
+  </body>
+</html>
