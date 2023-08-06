@@ -1,0 +1,11 @@
+# local env files
+.env
+
+# dependencies
+/node_modules
+
+# transpiled files
+/backend/fetchGihAPI.js
+
+# misc
+/try
