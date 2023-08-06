@@ -1,4 +1,6 @@
 # GifSearchEngine
+It is a gif-searching service that uses giphy.com's public API.   
+It also employs a database layer in between to cache searches and speed up the response in case of repeated queries.  
 
 ## To run
 
@@ -10,3 +12,6 @@
 You will need a mysql database named gifs
 
 add all env variable to .env file in similar manner as shown in .env_example file
+
+## Tech Stack
+`Node.js`, `typeScript`, `javaScript`, `mySQL`, and `sequelize ORM`
