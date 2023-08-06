@@ -1,8 +1,6 @@
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
-// "mysql://root:060145@localhost:3306/gifs";
-// process.env.DB_STRING, 
 const sequelize = new Sequelize({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT,

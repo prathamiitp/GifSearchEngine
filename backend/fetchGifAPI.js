@@ -4,9 +4,10 @@ var http = require("http");
 var https = require("https");
 var GifUrl = require("./model/url");
 require("dotenv/config");
-// https://api.giphy.com/v1/gifs/search?q=requestQuery&api_key=dhGatsWyo2dHB0vT8oyybsYlNGYfCQoD
-var giphyUrl = "https://api.giphy.com/v1/gifs/search?q=";
-var giphyApiKey = "&api_key=dhGatsWyo2dHB0vT8oyybsYlNGYfCQoD";
+
+// https://api.giphy.com/v1/gifs/search?q=<requestQuery>&api_key=<yourapikey>
+var giphyUrl = process.env.GIPHY_URL;
+var giphyApiKey = process.env.GIPHY_API_KEY;
 // try to fetch data from db, if doesnt exist then fetch from giphy api
 function fetchFromDb(requestQuery, res) {
     console.log("fetching from db");
