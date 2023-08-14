@@ -15,3 +15,11 @@ add all env variable to .env file in similar manner as shown in .env_example fil
 
 ## Tech Stack
 `Node.js`, `typeScript`, `javaScript`, `mySQL`, and `sequelize ORM`
+
+## TODO
+* sql injection prevention (DONE:- ORM used)
+* close sql connections (DONE:- ORM used)
+* remove credentials (DONE:- env files used)
+* pagenate results
+* ajax calls everywhere
+* make all functions async
